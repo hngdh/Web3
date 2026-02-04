@@ -1,0 +1,840 @@
+2026-02-04 23:49:14,182 INFO  [org.jboss.modules] (main) JBoss Modules version 2.1.5.Final
+2026-02-04 23:49:15,355 INFO  [org.jboss.msc] (main) JBoss MSC version 1.5.5.Final
+2026-02-04 23:49:15,361 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+2026-02-04 23:49:15,440 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0049: WildFly EE 33.0.2.Final (WildFly Core 25.0.2.Final) starting
+2026-02-04 23:49:15,441 DEBUG [org.jboss.as.config] (MSC service thread 1-1) Configured system properties:
+	[Standalone] = 
+	file.encoding = IBM437
+	file.separator = \
+	java.awt.headless = true
+	java.class.path = D:\Programming\Web\Lab3\wildfly\jboss-modules.jar
+	java.class.version = 61.0
+	java.home = C:\Program Files\Java\jdk-17
+	java.io.tmpdir = C:\Users\hoang\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Python313\Scripts\;C:\Program Files\Python313\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\WinSCP\;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\Program Files (x86)\ZeroTier\One\;C:\mingw64\bin;C:\Program Files\Git\cmd;P:\Tailscale\;P:\Sunshine;P:\Sunshine\tools;C:\Program Files\Tailscale\;P:\Streamlink\bin;C:\Users\hoang\.local\bin;C:\Users\hoang\AppData\Local\Microsoft\WindowsApps;P:\JetBrains\IntelliJ IDEA Community Edition 2025.2\bin;P:\Microsoft VS Code\bin;C:\Users\hoang\AppData\Local\GitHubDesktop\bin;P:\socat-1.8.0.3;P:\JetBrains\CLion 2025.2.1\bin;C:\Users\hoang\.dotnet\tools;C:\Users\hoang\AppData\Local\Microsoft\WinGet\Links;C:\Users\hoang\AppData\Local\JetBrains\Toolbox\scripts;P:\JetBrains\PyCharm 2025.3.1\bin;P:\JetBrains Rider 2025.2.4\bin;P:\JetBrains\IntelliJ IDEA 2025.3.1\bin;P:\JetBrains\WebStorm 2025.3.1\bin;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 17.0.12+8-LTS-286
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 17
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = https://java.oracle.com/
+	java.vendor.url.bug = https://bugreport.java.com/bugreport/
+	java.version = 17.0.12
+	java.version.date = 2024-07-16
+	java.vm.compressedOopsMode = 32-bit
+	java.vm.info = mixed mode, sharing
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 17
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 17.0.12+8-LTS-286
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = D:\Programming\Web\Lab3\wildfly
+	jboss.host.name = hos
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = hos
+	jboss.qualified.host.name = hos
+	jboss.server.base.dir = D:\Programming\Web\Lab3\wildfly\standalone
+	jboss.server.config.dir = D:\Programming\Web\Lab3\wildfly\standalone\configuration
+	jboss.server.data.dir = D:\Programming\Web\Lab3\wildfly\standalone\data
+	jboss.server.log.dir = D:\Programming\Web\Lab3\wildfly\standalone\log
+	jboss.server.name = hos
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = D:\Programming\Web\Lab3\wildfly\standalone\tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:D:\Programming\Web\Lab3\wildfly\standalone\configuration\logging.properties
+	module.path = D:\Programming\Web\Lab3\wildfly\modules
+	native.encoding = Cp1252
+	org.jboss.boot.log.file = D:\Programming\Web\Lab3\wildfly\standalone\log\server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Windows 11
+	os.version = 10.0
+	path.separator = ;
+	sun.arch.data.model = 64
+	sun.boot.library.path = C:\Program Files\Java\jdk-17\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = D:\Programming\Web\Lab3\wildfly\jboss-modules.jar -mp D:\Programming\Web\Lab3\wildfly\modules org.jboss.as.standalone -c=standalone.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	user.country = US
+	user.country.format = VN
+	user.dir = D:\Programming\Web\Lab3
+	user.home = C:\Users\hoang
+	user.language = en
+	user.language.format = vi
+	user.name = hoang
+	user.script = 
+	user.timezone = Europe/Moscow
+	user.variant = 
+2026-02-04 23:49:15,443 DEBUG [org.jboss.as.config] (MSC service thread 1-1) VM Arguments: -Dfile.encoding=IBM437 -D[Standalone] -Xms64m -Xmx512m -Djava.net.preferIPv4Stack=true -Djava.awt.headless=true -Djboss.modules.system.pkgs=org.jboss.byteman --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-modules=java.se --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldaps=ALL-UNNAMED --add-exports=jdk.naming.dns/com.sun.jndi.dns=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.naming/javax.naming=ALL-UNNAMED --add-modules=java.se -Djboss.home.dir=D:\Programming\Web\Lab3\wildfly -Djboss.server.base.dir=D:\Programming\Web\Lab3\wildfly\standalone -Djboss.server.log.dir=D:\Programming\Web\Lab3\wildfly\standalone\log -Djboss.server.config.dir=D:\Programming\Web\Lab3\wildfly\standalone\configuration -Dorg.jboss.boot.log.file=D:\Programming\Web\Lab3\wildfly\standalone\log\server.log -Dlogging.configuration=file:D:\Programming\Web\Lab3\wildfly\standalone\configuration\logging.properties 
+2026-02-04 23:49:16,211 INFO  [org.wildfly.security] (Controller Boot Thread) ELY00001: WildFly Elytron version 2.5.2.Final
+2026-02-04 23:49:16,925 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2026-02-04 23:49:16,959 INFO  [org.xnio] (MSC service thread 1-3) XNIO version 3.8.16.Final
+2026-02-04 23:49:16,967 INFO  [org.xnio.nio] (MSC service thread 1-3) XNIO NIO Implementation Version 3.8.16.Final
+2026-02-04 23:49:17,010 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 55) WFLYRS0016: RESTEasy version 6.2.10.Final
+2026-02-04 23:49:17,017 INFO  [org.wildfly.extension.elytron.oidc._private] (ServerService Thread Pool -- 51) WFLYOIDC0001: Activating WildFly Elytron OIDC Subsystem
+2026-02-04 23:49:17,019 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 53) WFLYCLINF0001: Activating Infinispan subsystem.
+2026-02-04 23:49:17,022 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 70) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2026-02-04 23:49:17,023 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 52) WFLYHEALTH0001: Activating Base Health Subsystem
+2026-02-04 23:49:17,038 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 60) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
+2026-02-04 23:49:17,055 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 62) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2026-02-04 23:49:17,087 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 63) WFLYNAM0001: Activating Naming Subsystem
+2026-02-04 23:49:17,089 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 72) WFLYWS0002: Activating WebServices Extension
+2026-02-04 23:49:17,114 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 54) WFLYIO001: Worker 'default' has auto-configured to 48 IO threads with 384 max task threads based on your 24 available processors
+2026-02-04 23:49:17,119 INFO  [org.jboss.as.connector] (MSC service thread 1-7) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 3.0.9.Final)
+2026-02-04 23:49:17,189 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0003: Undertow 2.3.17.Final starting
+2026-02-04 23:49:17,191 INFO  [org.jboss.remoting] (MSC service thread 1-3) JBoss Remoting version 5.0.29.Final
+2026-02-04 23:49:17,199 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 42) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 2.2)
+2026-02-04 23:49:17,360 INFO  [org.jboss.as.naming] (MSC service thread 1-4) WFLYNAM0003: Starting Naming Service
+2026-02-04 23:49:17,360 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = h2
+2026-02-04 23:49:17,391 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-5) WFLYELY00023: KeyStore file 'D:\Programming\Web\Lab3\wildfly\standalone\configuration\application.keystore' does not exist. Used blank.
+2026-02-04 23:49:17,422 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 71) WFLYUT0014: Creating file handler for path 'D:\Programming\Web\Lab3\wildfly/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2026-02-04 23:49:17,438 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-4) WFLYELY01084: KeyStore D:\Programming\Web\Lab3\wildfly\standalone\configuration\application.keystore not found, it will be auto-generated on first use with a self-signed certificate for host localhost
+2026-02-04 23:49:17,504 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0012: Started server default-server.
+2026-02-04 23:49:17,509 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) Queuing requests.
+2026-02-04 23:49:17,513 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0018: Host default-host starting
+2026-02-04 23:49:17,611 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 96 (per class), which is derived from the number of CPUs on this host.
+2026-02-04 23:49:17,611 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 384 (per class), which is derived from thread worker pool sizing.
+2026-02-04 23:49:17,752 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-6) WFLYDS0013: Started FileSystemDeploymentService for directory D:\Programming\Web\Lab3\wildfly\standalone\deployments
+2026-02-04 23:49:17,950 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2026-02-04 23:49:17,978 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2026-02-04 23:49:17,978 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2026-02-04 23:49:18,083 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2026-02-04 23:49:18,091 INFO  [org.jboss.ws.common.management] (MSC service thread 1-2) JBWS022052: Starting JBossWS 7.1.0.Final (Apache CXF 4.0.5) 
+2026-02-04 23:49:18,122 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2026-02-04 23:49:18,212 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2026-02-04 23:49:18,219 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2026-02-04 23:49:18,219 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2026-02-04 23:49:18,222 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly EE 33.0.2.Final (WildFly Core 25.0.2.Final) started in 4318ms - Started 281 of 524 services (320 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml - Minimum feature stability level: community
+2026-02-04 23:49:18,514 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "Lab3-dev-1.0-SNAPSHOT.war" (runtime-name: "Lab3-dev-1.0-SNAPSHOT.war")
+2026-02-04 23:49:19,840 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0003: Processing weld deployment Lab3-dev-1.0-SNAPSHOT.war
+2026-02-04 23:49:20,000 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-2) HV000001: Hibernate Validator 8.0.1.Final
+2026-02-04 23:49:20,551 INFO  [org.jboss.weld.Version] (MSC service thread 1-4) WELD-000900: 5.1.2 (Final)
+2026-02-04 23:49:21,303 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 33) Initializing Mojarra 4.0.7 for context '/Lab3-dev-1.0-SNAPSHOT'
+2026-02-04 23:49:22,333 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 33) Monitoring file:/D:/Programming/Web/Lab3/target/Lab3-dev-1.0-SNAPSHOT.war/WEB-INF/faces-config.xml for modifications
+2026-02-04 23:49:22,418 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 33) Running on PrimeFaces 15.0.10
+2026-02-04 23:49:22,441 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 33) WFLYUT0021: Registered web context: '/Lab3-dev-1.0-SNAPSHOT' for server 'default-server'
+2026-02-04 23:49:22,519 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "Lab3-dev-1.0-SNAPSHOT.war" (runtime-name : "Lab3-dev-1.0-SNAPSHOT.war")
+2026-02-04 23:51:13,849 INFO  [stdout] (default task-1) Session 8_wtYRldCXyMsmNTx71T4wBVlf5VIcASRbbfbVD2 was created!
+2026-02-04 23:51:14,009 SEVERE [jakarta.enterprise.resource.webcontainer.faces.application] (default task-1) Error Rendering View[/main.xhtml]: org.jboss.weld.exceptions.WeldException: WELD-000049: Unable to invoke public void data_services.DatabaseConnection.init() on data_services.DatabaseConnection@2acbce1
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.injection.producer.DefaultLifecycleCallbackInvoker.invokeMethods(DefaultLifecycleCallbackInvoker.java:87)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.injection.producer.DefaultLifecycleCallbackInvoker.postConstruct(DefaultLifecycleCallbackInvoker.java:68)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.injection.producer.BasicInjectionTarget.postConstruct(BasicInjectionTarget.java:131)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.bean.ManagedBean.create(ManagedBean.java:168)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.contexts.AbstractContext.get(AbstractContext.java:96)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.bean.ContextualInstanceStrategy$DefaultContextualInstanceStrategy.get(ContextualInstanceStrategy.java:104)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.bean.ContextualInstanceStrategy$ApplicationScopedContextualInstanceStrategy.get(ContextualInstanceStrategy.java:144)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.bean.ContextualInstance.get(ContextualInstance.java:50)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.bean.proxy.ContextBeanInstance.getInstance(ContextBeanInstance.java:101)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.bean.proxy.ProxyMethodHandler.getInstance(ProxyMethodHandler.java:136)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//data_services.DatabaseConnection$Proxy$_$$_WeldClientProxy.getConnection(Unknown Source)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//data_services.PointDBServices.countBySession(PointDBServices.java:112)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//data_services.PointDBServices$Proxy$_$$_WeldClientProxy.countBySession(Unknown Source)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//models.ListBean$1.count(ListBean.java:54)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//org.primefaces.component.datatable.DataTable.loadLazyScrollData(DataTable.java:540)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//org.primefaces.component.datatable.DataTable.loadLazyDataIfEnabled(DataTable.java:527)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//org.primefaces.component.datatable.DataTableRenderer.preRender(DataTableRenderer.java:132)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//org.primefaces.component.datatable.DataTableRenderer.render(DataTableRenderer.java:109)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//org.primefaces.component.datatable.DataTableRenderer.encodeEnd(DataTableRenderer.java:102)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.UIComponentBase.encodeEnd(UIComponentBase.java:585)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.UIComponent.encodeAll(UIComponent.java:1442)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.UIComponent.encodeAll(UIComponent.java:1438)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.UIComponent.encodeAll(UIComponent.java:1438)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.application.view.FaceletViewHandlingStrategy.renderView(FaceletViewHandlingStrategy.java:449)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.application.view.MultiViewHandler.renderView(MultiViewHandler.java:160)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.application.ViewHandlerWrapper.renderView(ViewHandlerWrapper.java:125)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:93)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.lifecycle.Phase.doPhase(Phase.java:72)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:150)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.webapp.FacesServlet.executeLifecyle(FacesServlet.java:692)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.webapp.FacesServlet.service(FacesServlet.java:449)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.security.elytron-web.undertow-server@4.1.0.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.lambda$handleRequest$1(ElytronRunAsHandler.java:68)
+	at org.wildfly.security.elytron-base@2.5.2.Final//org.wildfly.security.auth.server.FlexibleIdentityAssociation.runAsFunctionEx(FlexibleIdentityAssociation.java:103)
+	at org.wildfly.security.elytron-base@2.5.2.Final//org.wildfly.security.auth.server.Scoped.runAsFunctionEx(Scoped.java:161)
+	at org.wildfly.security.elytron-base@2.5.2.Final//org.wildfly.security.auth.server.Scoped.runAs(Scoped.java:73)
+	at org.wildfly.security.elytron-web.undertow-server@4.1.0.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.handleRequest(ElytronRunAsHandler.java:67)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.core@2.3.17.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.core@2.3.17.Final//io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.core@2.3.17.Final//io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at org.wildfly.security.elytron-web.undertow-server-servlet@4.1.0.Final//org.wildfly.elytron.web.undertow.server.servlet.CleanUpHandler.handleRequest(CleanUpHandler.java:38)
+	at io.undertow.core@2.3.17.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@33.0.2.Final//org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:44)
+	at io.undertow.core@2.3.17.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@33.0.2.Final//org.wildfly.extension.undertow.deployment.GlobalRequestControllerHandler.handleRequest(GlobalRequestControllerHandler.java:51)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
+	at io.undertow.core@2.3.17.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:276)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:132)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow@33.0.2.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1421)
+	at org.wildfly.extension.undertow@33.0.2.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1421)
+	at org.wildfly.extension.undertow@33.0.2.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1421)
+	at org.wildfly.extension.undertow@33.0.2.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1421)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:256)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:101)
+	at io.undertow.core@2.3.17.Final//io.undertow.server.Connectors.executeRootHandler(Connectors.java:395)
+	at io.undertow.core@2.3.17.Final//io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:859)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1990)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1348)
+	at org.jboss.xnio@3.8.16.Final//org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1282)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.injection.producer.DefaultLifecycleCallbackInvoker.invokeMethods(DefaultLifecycleCallbackInvoker.java:85)
+	... 72 more
+Caused by: java.lang.RuntimeException: Failed to lookup DataSource: PostgresDS -- service jboss.naming.context.java.PostgresDS
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//data_services.DatabaseConnection.init(DatabaseConnection.java:26)
+	... 77 more
+Caused by: javax.naming.NameNotFoundException: PostgresDS -- service jboss.naming.context.java.PostgresDS
+	at org.jboss.as.naming@33.0.2.Final//org.jboss.as.naming.ServiceBasedNamingStore.lookup(ServiceBasedNamingStore.java:89)
+	at org.jboss.as.naming@33.0.2.Final//org.jboss.as.naming.NamingContext.lookup(NamingContext.java:190)
+	at org.jboss.as.naming@33.0.2.Final//org.jboss.as.naming.InitialContext$DefaultInitialContext.lookup(InitialContext.java:220)
+	at org.jboss.as.naming@33.0.2.Final//org.jboss.as.naming.NamingContext.lookup(NamingContext.java:176)
+	at org.jboss.as.naming@33.0.2.Final//org.jboss.as.naming.NamingContext.lookup(NamingContext.java:172)
+	at java.naming/javax.naming.InitialContext.lookup(InitialContext.java:409)
+	at java.naming/javax.naming.InitialContext.lookup(InitialContext.java:409)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//data_services.DatabaseConnection.init(DatabaseConnection.java:23)
+	... 77 more
+
+2026-02-04 23:51:14,104 FATAL [jakarta.enterprise.resource.webcontainer.faces.context] (default task-1) JSF1073: org.jboss.weld.exceptions.WeldException caught during processing of RENDER_RESPONSE 6 : UIComponent-ClientId=, Message=WELD-000049: Unable to invoke public void data_services.DatabaseConnection.init() on data_services.DatabaseConnection@2acbce1
+2026-02-04 23:51:14,104 FATAL [jakarta.enterprise.resource.webcontainer.faces.context] (default task-1) WELD-000049: Unable to invoke public void data_services.DatabaseConnection.init() on data_services.DatabaseConnection@2acbce1: org.jboss.weld.exceptions.WeldException: WELD-000049: Unable to invoke public void data_services.DatabaseConnection.init() on data_services.DatabaseConnection@2acbce1
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.injection.producer.DefaultLifecycleCallbackInvoker.invokeMethods(DefaultLifecycleCallbackInvoker.java:87)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.injection.producer.DefaultLifecycleCallbackInvoker.postConstruct(DefaultLifecycleCallbackInvoker.java:68)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.injection.producer.BasicInjectionTarget.postConstruct(BasicInjectionTarget.java:131)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.bean.ManagedBean.create(ManagedBean.java:168)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.contexts.AbstractContext.get(AbstractContext.java:96)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.bean.ContextualInstanceStrategy$DefaultContextualInstanceStrategy.get(ContextualInstanceStrategy.java:104)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.bean.ContextualInstanceStrategy$ApplicationScopedContextualInstanceStrategy.get(ContextualInstanceStrategy.java:144)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.bean.ContextualInstance.get(ContextualInstance.java:50)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.bean.proxy.ContextBeanInstance.getInstance(ContextBeanInstance.java:101)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.bean.proxy.ProxyMethodHandler.getInstance(ProxyMethodHandler.java:136)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//data_services.DatabaseConnection$Proxy$_$$_WeldClientProxy.getConnection(Unknown Source)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//data_services.PointDBServices.countBySession(PointDBServices.java:112)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//data_services.PointDBServices$Proxy$_$$_WeldClientProxy.countBySession(Unknown Source)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//models.ListBean$1.count(ListBean.java:54)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//org.primefaces.component.datatable.DataTable.loadLazyScrollData(DataTable.java:540)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//org.primefaces.component.datatable.DataTable.loadLazyDataIfEnabled(DataTable.java:527)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//org.primefaces.component.datatable.DataTableRenderer.preRender(DataTableRenderer.java:132)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//org.primefaces.component.datatable.DataTableRenderer.render(DataTableRenderer.java:109)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//org.primefaces.component.datatable.DataTableRenderer.encodeEnd(DataTableRenderer.java:102)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.UIComponentBase.encodeEnd(UIComponentBase.java:585)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.UIComponent.encodeAll(UIComponent.java:1442)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.UIComponent.encodeAll(UIComponent.java:1438)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.UIComponent.encodeAll(UIComponent.java:1438)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.application.view.FaceletViewHandlingStrategy.renderView(FaceletViewHandlingStrategy.java:449)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.application.view.MultiViewHandler.renderView(MultiViewHandler.java:160)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.application.ViewHandlerWrapper.renderView(ViewHandlerWrapper.java:125)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:93)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.lifecycle.Phase.doPhase(Phase.java:72)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:150)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.webapp.FacesServlet.executeLifecyle(FacesServlet.java:692)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.webapp.FacesServlet.service(FacesServlet.java:449)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.security.elytron-web.undertow-server@4.1.0.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.lambda$handleRequest$1(ElytronRunAsHandler.java:68)
+	at org.wildfly.security.elytron-base@2.5.2.Final//org.wildfly.security.auth.server.FlexibleIdentityAssociation.runAsFunctionEx(FlexibleIdentityAssociation.java:103)
+	at org.wildfly.security.elytron-base@2.5.2.Final//org.wildfly.security.auth.server.Scoped.runAsFunctionEx(Scoped.java:161)
+	at org.wildfly.security.elytron-base@2.5.2.Final//org.wildfly.security.auth.server.Scoped.runAs(Scoped.java:73)
+	at org.wildfly.security.elytron-web.undertow-server@4.1.0.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.handleRequest(ElytronRunAsHandler.java:67)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.core@2.3.17.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.core@2.3.17.Final//io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.core@2.3.17.Final//io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at org.wildfly.security.elytron-web.undertow-server-servlet@4.1.0.Final//org.wildfly.elytron.web.undertow.server.servlet.CleanUpHandler.handleRequest(CleanUpHandler.java:38)
+	at io.undertow.core@2.3.17.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@33.0.2.Final//org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:44)
+	at io.undertow.core@2.3.17.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@33.0.2.Final//org.wildfly.extension.undertow.deployment.GlobalRequestControllerHandler.handleRequest(GlobalRequestControllerHandler.java:51)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
+	at io.undertow.core@2.3.17.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:276)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:132)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow@33.0.2.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1421)
+	at org.wildfly.extension.undertow@33.0.2.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1421)
+	at org.wildfly.extension.undertow@33.0.2.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1421)
+	at org.wildfly.extension.undertow@33.0.2.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1421)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:256)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:101)
+	at io.undertow.core@2.3.17.Final//io.undertow.server.Connectors.executeRootHandler(Connectors.java:395)
+	at io.undertow.core@2.3.17.Final//io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:859)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1990)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1348)
+	at org.jboss.xnio@3.8.16.Final//org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1282)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.injection.producer.DefaultLifecycleCallbackInvoker.invokeMethods(DefaultLifecycleCallbackInvoker.java:85)
+	... 72 more
+Caused by: java.lang.RuntimeException: Failed to lookup DataSource: PostgresDS -- service jboss.naming.context.java.PostgresDS
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//data_services.DatabaseConnection.init(DatabaseConnection.java:26)
+	... 77 more
+Caused by: javax.naming.NameNotFoundException: PostgresDS -- service jboss.naming.context.java.PostgresDS
+	at org.jboss.as.naming@33.0.2.Final//org.jboss.as.naming.ServiceBasedNamingStore.lookup(ServiceBasedNamingStore.java:89)
+	at org.jboss.as.naming@33.0.2.Final//org.jboss.as.naming.NamingContext.lookup(NamingContext.java:190)
+	at org.jboss.as.naming@33.0.2.Final//org.jboss.as.naming.InitialContext$DefaultInitialContext.lookup(InitialContext.java:220)
+	at org.jboss.as.naming@33.0.2.Final//org.jboss.as.naming.NamingContext.lookup(NamingContext.java:176)
+	at org.jboss.as.naming@33.0.2.Final//org.jboss.as.naming.NamingContext.lookup(NamingContext.java:172)
+	at java.naming/javax.naming.InitialContext.lookup(InitialContext.java:409)
+	at java.naming/javax.naming.InitialContext.lookup(InitialContext.java:409)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//data_services.DatabaseConnection.init(DatabaseConnection.java:23)
+	... 77 more
+
+2026-02-04 23:51:56,760 INFO  [org.jboss.modules] (main) JBoss Modules version 2.1.5.Final
+2026-02-04 23:51:57,353 INFO  [org.jboss.msc] (main) JBoss MSC version 1.5.5.Final
+2026-02-04 23:51:57,382 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+2026-02-04 23:51:57,477 INFO  [org.jboss.as] (MSC service thread 1-3) WFLYSRV0049: WildFly EE 33.0.2.Final (WildFly Core 25.0.2.Final) starting
+2026-02-04 23:51:57,478 DEBUG [org.jboss.as.config] (MSC service thread 1-3) Configured system properties:
+	[Standalone] = 
+	file.encoding = IBM437
+	file.separator = \
+	java.awt.headless = true
+	java.class.path = D:\Programming\Web\Lab3\wildfly\jboss-modules.jar
+	java.class.version = 61.0
+	java.home = C:\Program Files\Java\jdk-17
+	java.io.tmpdir = C:\Users\hoang\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Python313\Scripts\;C:\Program Files\Python313\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\WinSCP\;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\Program Files (x86)\ZeroTier\One\;C:\mingw64\bin;C:\Program Files\Git\cmd;P:\Tailscale\;P:\Sunshine;P:\Sunshine\tools;C:\Program Files\Tailscale\;P:\Streamlink\bin;C:\Users\hoang\.local\bin;C:\Users\hoang\AppData\Local\Microsoft\WindowsApps;P:\JetBrains\IntelliJ IDEA Community Edition 2025.2\bin;P:\Microsoft VS Code\bin;C:\Users\hoang\AppData\Local\GitHubDesktop\bin;P:\socat-1.8.0.3;P:\JetBrains\CLion 2025.2.1\bin;C:\Users\hoang\.dotnet\tools;C:\Users\hoang\AppData\Local\Microsoft\WinGet\Links;C:\Users\hoang\AppData\Local\JetBrains\Toolbox\scripts;P:\JetBrains\PyCharm 2025.3.1\bin;P:\JetBrains Rider 2025.2.4\bin;P:\JetBrains\IntelliJ IDEA 2025.3.1\bin;P:\JetBrains\WebStorm 2025.3.1\bin;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 17.0.12+8-LTS-286
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 17
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = https://java.oracle.com/
+	java.vendor.url.bug = https://bugreport.java.com/bugreport/
+	java.version = 17.0.12
+	java.version.date = 2024-07-16
+	java.vm.compressedOopsMode = 32-bit
+	java.vm.info = mixed mode, sharing
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 17
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 17.0.12+8-LTS-286
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = D:\Programming\Web\Lab3\wildfly
+	jboss.host.name = hos
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = hos
+	jboss.qualified.host.name = hos
+	jboss.server.base.dir = D:\Programming\Web\Lab3\wildfly\standalone
+	jboss.server.config.dir = D:\Programming\Web\Lab3\wildfly\standalone\configuration
+	jboss.server.data.dir = D:\Programming\Web\Lab3\wildfly\standalone\data
+	jboss.server.log.dir = D:\Programming\Web\Lab3\wildfly\standalone\log
+	jboss.server.name = hos
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = D:\Programming\Web\Lab3\wildfly\standalone\tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:D:\Programming\Web\Lab3\wildfly\standalone\configuration\logging.properties
+	module.path = D:\Programming\Web\Lab3\wildfly\modules
+	native.encoding = Cp1252
+	org.jboss.boot.log.file = D:\Programming\Web\Lab3\wildfly\standalone\log\server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Windows 11
+	os.version = 10.0
+	path.separator = ;
+	sun.arch.data.model = 64
+	sun.boot.library.path = C:\Program Files\Java\jdk-17\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = D:\Programming\Web\Lab3\wildfly\jboss-modules.jar -mp D:\Programming\Web\Lab3\wildfly\modules org.jboss.as.standalone -c=standalone.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	user.country = US
+	user.country.format = VN
+	user.dir = D:\Programming\Web\Lab3
+	user.home = C:\Users\hoang
+	user.language = en
+	user.language.format = vi
+	user.name = hoang
+	user.script = 
+	user.timezone = Europe/Moscow
+	user.variant = 
+2026-02-04 23:51:57,478 DEBUG [org.jboss.as.config] (MSC service thread 1-3) VM Arguments: -Dfile.encoding=IBM437 -D[Standalone] -Xms64m -Xmx512m -Djava.net.preferIPv4Stack=true -Djava.awt.headless=true -Djboss.modules.system.pkgs=org.jboss.byteman --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-modules=java.se --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldaps=ALL-UNNAMED --add-exports=jdk.naming.dns/com.sun.jndi.dns=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.naming/javax.naming=ALL-UNNAMED --add-modules=java.se -Djboss.home.dir=D:\Programming\Web\Lab3\wildfly -Djboss.server.base.dir=D:\Programming\Web\Lab3\wildfly\standalone -Djboss.server.log.dir=D:\Programming\Web\Lab3\wildfly\standalone\log -Djboss.server.config.dir=D:\Programming\Web\Lab3\wildfly\standalone\configuration -Dorg.jboss.boot.log.file=D:\Programming\Web\Lab3\wildfly\standalone\log\server.log -Dlogging.configuration=file:D:\Programming\Web\Lab3\wildfly\standalone\configuration\logging.properties 
+2026-02-04 23:51:58,850 INFO  [org.wildfly.security] (Controller Boot Thread) ELY00001: WildFly Elytron version 2.5.2.Final
+2026-02-04 23:52:00,123 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2026-02-04 23:52:00,162 INFO  [org.xnio] (MSC service thread 1-6) XNIO version 3.8.16.Final
+2026-02-04 23:52:00,171 INFO  [org.xnio.nio] (MSC service thread 1-6) XNIO NIO Implementation Version 3.8.16.Final
+2026-02-04 23:52:00,222 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 55) WFLYRS0016: RESTEasy version 6.2.10.Final
+2026-02-04 23:52:00,232 INFO  [org.wildfly.extension.elytron.oidc._private] (ServerService Thread Pool -- 51) WFLYOIDC0001: Activating WildFly Elytron OIDC Subsystem
+2026-02-04 23:52:00,235 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 53) WFLYCLINF0001: Activating Infinispan subsystem.
+2026-02-04 23:52:00,239 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 70) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2026-02-04 23:52:00,240 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 52) WFLYHEALTH0001: Activating Base Health Subsystem
+2026-02-04 23:52:00,268 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 60) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
+2026-02-04 23:52:00,296 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 62) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2026-02-04 23:52:00,348 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 63) WFLYNAM0001: Activating Naming Subsystem
+2026-02-04 23:52:00,349 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 72) WFLYWS0002: Activating WebServices Extension
+2026-02-04 23:52:00,438 INFO  [org.jboss.as.connector] (MSC service thread 1-3) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 3.0.9.Final)
+2026-02-04 23:52:00,556 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0003: Undertow 2.3.17.Final starting
+2026-02-04 23:52:00,556 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 42) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 2.2)
+2026-02-04 23:52:00,621 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = h2
+2026-02-04 23:52:00,629 INFO  [org.jboss.as.naming] (MSC service thread 1-7) WFLYNAM0003: Starting Naming Service
+2026-02-04 23:52:00,849 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-5) WFLYELY00023: KeyStore file 'D:\Programming\Web\Lab3\wildfly\standalone\configuration\application.keystore' does not exist. Used blank.
+2026-02-04 23:52:00,979 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 71) WFLYUT0014: Creating file handler for path 'D:\Programming\Web\Lab3\wildfly/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2026-02-04 23:52:01,021 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-2) WFLYELY01084: KeyStore D:\Programming\Web\Lab3\wildfly\standalone\configuration\application.keystore not found, it will be auto-generated on first use with a self-signed certificate for host localhost
+2026-02-04 23:52:01,292 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 96 (per class), which is derived from the number of CPUs on this host.
+2026-02-04 23:52:01,292 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 96 (per class), which is derived from thread worker pool sizing.
+2026-02-04 23:52:01,545 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2026-02-04 23:52:01,626 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 54) WFLYIO001: Worker 'default' has auto-configured to 48 IO threads with 384 max task threads based on your 24 available processors
+2026-02-04 23:52:01,759 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-3) WFLYDS0013: Started FileSystemDeploymentService for directory D:\Programming\Web\Lab3\wildfly\standalone\deployments
+2026-02-04 23:52:01,773 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "Lab3-dev-1.0-SNAPSHOT.war" (runtime-name: "Lab3-dev-1.0-SNAPSHOT.war")
+2026-02-04 23:52:01,790 INFO  [org.jboss.remoting] (MSC service thread 1-1) JBoss Remoting version 5.0.29.Final
+2026-02-04 23:52:01,912 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0012: Started server default-server.
+2026-02-04 23:52:01,942 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) Queuing requests.
+2026-02-04 23:52:01,950 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0018: Host default-host starting
+2026-02-04 23:52:02,082 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2026-02-04 23:52:02,086 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2026-02-04 23:52:02,422 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2026-02-04 23:52:02,513 INFO  [org.jboss.ws.common.management] (MSC service thread 1-1) JBWS022052: Starting JBossWS 7.1.0.Final (Apache CXF 4.0.5) 
+2026-02-04 23:52:02,714 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2026-02-04 23:52:04,265 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) WFLYWELD0003: Processing weld deployment Lab3-dev-1.0-SNAPSHOT.war
+2026-02-04 23:52:04,527 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-8) HV000001: Hibernate Validator 8.0.1.Final
+2026-02-04 23:52:05,183 INFO  [org.jboss.weld.Version] (MSC service thread 1-4) WELD-000900: 5.1.2 (Final)
+2026-02-04 23:52:06,203 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 89) Initializing Mojarra 4.0.7 for context '/Lab3-dev-1.0-SNAPSHOT'
+2026-02-04 23:52:07,705 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 89) Monitoring file:/D:/Programming/Web/Lab3/target/Lab3-dev-1.0-SNAPSHOT.war/WEB-INF/faces-config.xml for modifications
+2026-02-04 23:52:07,823 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 89) Running on PrimeFaces 15.0.10
+2026-02-04 23:52:07,877 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 89) WFLYUT0021: Registered web context: '/Lab3-dev-1.0-SNAPSHOT' for server 'default-server'
+2026-02-04 23:52:08,033 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "Lab3-dev-1.0-SNAPSHOT.war" (runtime-name : "Lab3-dev-1.0-SNAPSHOT.war")
+2026-02-04 23:52:08,115 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2026-02-04 23:52:08,126 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2026-02-04 23:52:08,127 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2026-02-04 23:52:08,130 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly EE 33.0.2.Final (WildFly Core 25.0.2.Final) started in 11656ms - Started 446 of 676 services (325 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml - Minimum feature stability level: community
+2026-02-04 23:52:08,318 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 89) WFLYUT0022: Unregistered web context: '/Lab3-dev-1.0-SNAPSHOT' from server 'default-server'
+2026-02-04 23:52:08,397 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment Lab3-dev-1.0-SNAPSHOT.war (runtime-name: Lab3-dev-1.0-SNAPSHOT.war) in 91ms
+2026-02-04 23:52:08,400 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "Lab3-dev-1.0-SNAPSHOT.war" (runtime-name: "Lab3-dev-1.0-SNAPSHOT.war")
+2026-02-04 23:52:09,026 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0003: Processing weld deployment Lab3-dev-1.0-SNAPSHOT.war
+2026-02-04 23:52:10,077 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 31) Initializing Mojarra 4.0.7 for context '/Lab3-dev-1.0-SNAPSHOT'
+2026-02-04 23:52:10,673 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 31) Monitoring file:/D:/Programming/Web/Lab3/target/Lab3-dev-1.0-SNAPSHOT.war/WEB-INF/faces-config.xml for modifications
+2026-02-04 23:52:10,679 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 31) Running on PrimeFaces 15.0.10
+2026-02-04 23:52:10,681 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 31) WFLYUT0021: Registered web context: '/Lab3-dev-1.0-SNAPSHOT' for server 'default-server'
+2026-02-04 23:52:10,779 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0016: Replaced deployment "Lab3-dev-1.0-SNAPSHOT.war" with deployment "Lab3-dev-1.0-SNAPSHOT.war"
+2026-02-04 23:53:34,254 INFO  [stdout] (default task-1) Session BncsNmpEICZ7fQirwv6MlJ4UGyxKmKwxOyy2kAdt was created!
+2026-02-04 23:53:34,395 SEVERE [jakarta.enterprise.resource.webcontainer.faces.application] (default task-1) Error Rendering View[/main.xhtml]: org.jboss.weld.exceptions.WeldException: WELD-000049: Unable to invoke public void data_services.DatabaseConnection.init() on data_services.DatabaseConnection@637c76f3
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.injection.producer.DefaultLifecycleCallbackInvoker.invokeMethods(DefaultLifecycleCallbackInvoker.java:87)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.injection.producer.DefaultLifecycleCallbackInvoker.postConstruct(DefaultLifecycleCallbackInvoker.java:68)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.injection.producer.BasicInjectionTarget.postConstruct(BasicInjectionTarget.java:131)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.bean.ManagedBean.create(ManagedBean.java:168)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.contexts.AbstractContext.get(AbstractContext.java:96)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.bean.ContextualInstanceStrategy$DefaultContextualInstanceStrategy.get(ContextualInstanceStrategy.java:104)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.bean.ContextualInstanceStrategy$ApplicationScopedContextualInstanceStrategy.get(ContextualInstanceStrategy.java:144)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.bean.ContextualInstance.get(ContextualInstance.java:50)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.bean.proxy.ContextBeanInstance.getInstance(ContextBeanInstance.java:101)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.bean.proxy.ProxyMethodHandler.getInstance(ProxyMethodHandler.java:136)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//data_services.DatabaseConnection$Proxy$_$$_WeldClientProxy.getConnection(Unknown Source)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//data_services.PointDBServices.countBySession(PointDBServices.java:112)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//data_services.PointDBServices$Proxy$_$$_WeldClientProxy.countBySession(Unknown Source)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//models.ListBean$1.count(ListBean.java:54)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//org.primefaces.component.datatable.DataTable.loadLazyScrollData(DataTable.java:540)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//org.primefaces.component.datatable.DataTable.loadLazyDataIfEnabled(DataTable.java:527)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//org.primefaces.component.datatable.DataTableRenderer.preRender(DataTableRenderer.java:132)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//org.primefaces.component.datatable.DataTableRenderer.render(DataTableRenderer.java:109)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//org.primefaces.component.datatable.DataTableRenderer.encodeEnd(DataTableRenderer.java:102)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.UIComponentBase.encodeEnd(UIComponentBase.java:585)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.UIComponent.encodeAll(UIComponent.java:1442)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.UIComponent.encodeAll(UIComponent.java:1438)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.UIComponent.encodeAll(UIComponent.java:1438)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.application.view.FaceletViewHandlingStrategy.renderView(FaceletViewHandlingStrategy.java:449)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.application.view.MultiViewHandler.renderView(MultiViewHandler.java:160)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.application.ViewHandlerWrapper.renderView(ViewHandlerWrapper.java:125)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:93)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.lifecycle.Phase.doPhase(Phase.java:72)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:150)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.webapp.FacesServlet.executeLifecyle(FacesServlet.java:692)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.webapp.FacesServlet.service(FacesServlet.java:449)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.security.elytron-web.undertow-server@4.1.0.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.lambda$handleRequest$1(ElytronRunAsHandler.java:68)
+	at org.wildfly.security.elytron-base@2.5.2.Final//org.wildfly.security.auth.server.FlexibleIdentityAssociation.runAsFunctionEx(FlexibleIdentityAssociation.java:103)
+	at org.wildfly.security.elytron-base@2.5.2.Final//org.wildfly.security.auth.server.Scoped.runAsFunctionEx(Scoped.java:161)
+	at org.wildfly.security.elytron-base@2.5.2.Final//org.wildfly.security.auth.server.Scoped.runAs(Scoped.java:73)
+	at org.wildfly.security.elytron-web.undertow-server@4.1.0.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.handleRequest(ElytronRunAsHandler.java:67)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.core@2.3.17.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.core@2.3.17.Final//io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.core@2.3.17.Final//io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at org.wildfly.security.elytron-web.undertow-server-servlet@4.1.0.Final//org.wildfly.elytron.web.undertow.server.servlet.CleanUpHandler.handleRequest(CleanUpHandler.java:38)
+	at io.undertow.core@2.3.17.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@33.0.2.Final//org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:44)
+	at io.undertow.core@2.3.17.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@33.0.2.Final//org.wildfly.extension.undertow.deployment.GlobalRequestControllerHandler.handleRequest(GlobalRequestControllerHandler.java:51)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
+	at io.undertow.core@2.3.17.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:276)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:132)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow@33.0.2.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1421)
+	at org.wildfly.extension.undertow@33.0.2.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1421)
+	at org.wildfly.extension.undertow@33.0.2.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1421)
+	at org.wildfly.extension.undertow@33.0.2.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1421)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:256)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:101)
+	at io.undertow.core@2.3.17.Final//io.undertow.server.Connectors.executeRootHandler(Connectors.java:395)
+	at io.undertow.core@2.3.17.Final//io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:859)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1990)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1348)
+	at org.jboss.xnio@3.8.16.Final//org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1282)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.injection.producer.DefaultLifecycleCallbackInvoker.invokeMethods(DefaultLifecycleCallbackInvoker.java:85)
+	... 72 more
+Caused by: java.lang.RuntimeException: Failed to lookup DataSource: PostgresDS -- service jboss.naming.context.java.PostgresDS
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//data_services.DatabaseConnection.init(DatabaseConnection.java:26)
+	... 77 more
+Caused by: javax.naming.NameNotFoundException: PostgresDS -- service jboss.naming.context.java.PostgresDS
+	at org.jboss.as.naming@33.0.2.Final//org.jboss.as.naming.ServiceBasedNamingStore.lookup(ServiceBasedNamingStore.java:89)
+	at org.jboss.as.naming@33.0.2.Final//org.jboss.as.naming.NamingContext.lookup(NamingContext.java:190)
+	at org.jboss.as.naming@33.0.2.Final//org.jboss.as.naming.InitialContext$DefaultInitialContext.lookup(InitialContext.java:220)
+	at org.jboss.as.naming@33.0.2.Final//org.jboss.as.naming.NamingContext.lookup(NamingContext.java:176)
+	at org.jboss.as.naming@33.0.2.Final//org.jboss.as.naming.NamingContext.lookup(NamingContext.java:172)
+	at java.naming/javax.naming.InitialContext.lookup(InitialContext.java:409)
+	at java.naming/javax.naming.InitialContext.lookup(InitialContext.java:409)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//data_services.DatabaseConnection.init(DatabaseConnection.java:23)
+	... 77 more
+
+2026-02-04 23:53:34,472 FATAL [jakarta.enterprise.resource.webcontainer.faces.context] (default task-1) JSF1073: org.jboss.weld.exceptions.WeldException caught during processing of RENDER_RESPONSE 6 : UIComponent-ClientId=, Message=WELD-000049: Unable to invoke public void data_services.DatabaseConnection.init() on data_services.DatabaseConnection@637c76f3
+2026-02-04 23:53:34,472 FATAL [jakarta.enterprise.resource.webcontainer.faces.context] (default task-1) WELD-000049: Unable to invoke public void data_services.DatabaseConnection.init() on data_services.DatabaseConnection@637c76f3: org.jboss.weld.exceptions.WeldException: WELD-000049: Unable to invoke public void data_services.DatabaseConnection.init() on data_services.DatabaseConnection@637c76f3
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.injection.producer.DefaultLifecycleCallbackInvoker.invokeMethods(DefaultLifecycleCallbackInvoker.java:87)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.injection.producer.DefaultLifecycleCallbackInvoker.postConstruct(DefaultLifecycleCallbackInvoker.java:68)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.injection.producer.BasicInjectionTarget.postConstruct(BasicInjectionTarget.java:131)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.bean.ManagedBean.create(ManagedBean.java:168)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.contexts.AbstractContext.get(AbstractContext.java:96)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.bean.ContextualInstanceStrategy$DefaultContextualInstanceStrategy.get(ContextualInstanceStrategy.java:104)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.bean.ContextualInstanceStrategy$ApplicationScopedContextualInstanceStrategy.get(ContextualInstanceStrategy.java:144)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.bean.ContextualInstance.get(ContextualInstance.java:50)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.bean.proxy.ContextBeanInstance.getInstance(ContextBeanInstance.java:101)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.bean.proxy.ProxyMethodHandler.getInstance(ProxyMethodHandler.java:136)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//data_services.DatabaseConnection$Proxy$_$$_WeldClientProxy.getConnection(Unknown Source)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//data_services.PointDBServices.countBySession(PointDBServices.java:112)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//data_services.PointDBServices$Proxy$_$$_WeldClientProxy.countBySession(Unknown Source)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//models.ListBean$1.count(ListBean.java:54)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//org.primefaces.component.datatable.DataTable.loadLazyScrollData(DataTable.java:540)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//org.primefaces.component.datatable.DataTable.loadLazyDataIfEnabled(DataTable.java:527)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//org.primefaces.component.datatable.DataTableRenderer.preRender(DataTableRenderer.java:132)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//org.primefaces.component.datatable.DataTableRenderer.render(DataTableRenderer.java:109)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//org.primefaces.component.datatable.DataTableRenderer.encodeEnd(DataTableRenderer.java:102)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.UIComponentBase.encodeEnd(UIComponentBase.java:585)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.UIComponent.encodeAll(UIComponent.java:1442)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.UIComponent.encodeAll(UIComponent.java:1438)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.UIComponent.encodeAll(UIComponent.java:1438)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.application.view.FaceletViewHandlingStrategy.renderView(FaceletViewHandlingStrategy.java:449)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.application.view.MultiViewHandler.renderView(MultiViewHandler.java:160)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.application.ViewHandlerWrapper.renderView(ViewHandlerWrapper.java:125)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:93)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.lifecycle.Phase.doPhase(Phase.java:72)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:150)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.webapp.FacesServlet.executeLifecyle(FacesServlet.java:692)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.webapp.FacesServlet.service(FacesServlet.java:449)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.security.elytron-web.undertow-server@4.1.0.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.lambda$handleRequest$1(ElytronRunAsHandler.java:68)
+	at org.wildfly.security.elytron-base@2.5.2.Final//org.wildfly.security.auth.server.FlexibleIdentityAssociation.runAsFunctionEx(FlexibleIdentityAssociation.java:103)
+	at org.wildfly.security.elytron-base@2.5.2.Final//org.wildfly.security.auth.server.Scoped.runAsFunctionEx(Scoped.java:161)
+	at org.wildfly.security.elytron-base@2.5.2.Final//org.wildfly.security.auth.server.Scoped.runAs(Scoped.java:73)
+	at org.wildfly.security.elytron-web.undertow-server@4.1.0.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.handleRequest(ElytronRunAsHandler.java:67)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.core@2.3.17.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.core@2.3.17.Final//io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.core@2.3.17.Final//io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at org.wildfly.security.elytron-web.undertow-server-servlet@4.1.0.Final//org.wildfly.elytron.web.undertow.server.servlet.CleanUpHandler.handleRequest(CleanUpHandler.java:38)
+	at io.undertow.core@2.3.17.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@33.0.2.Final//org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:44)
+	at io.undertow.core@2.3.17.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@33.0.2.Final//org.wildfly.extension.undertow.deployment.GlobalRequestControllerHandler.handleRequest(GlobalRequestControllerHandler.java:51)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
+	at io.undertow.core@2.3.17.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:276)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:132)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow@33.0.2.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1421)
+	at org.wildfly.extension.undertow@33.0.2.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1421)
+	at org.wildfly.extension.undertow@33.0.2.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1421)
+	at org.wildfly.extension.undertow@33.0.2.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1421)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:256)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:101)
+	at io.undertow.core@2.3.17.Final//io.undertow.server.Connectors.executeRootHandler(Connectors.java:395)
+	at io.undertow.core@2.3.17.Final//io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:859)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1990)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1348)
+	at org.jboss.xnio@3.8.16.Final//org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1282)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.injection.producer.DefaultLifecycleCallbackInvoker.invokeMethods(DefaultLifecycleCallbackInvoker.java:85)
+	... 72 more
+Caused by: java.lang.RuntimeException: Failed to lookup DataSource: PostgresDS -- service jboss.naming.context.java.PostgresDS
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//data_services.DatabaseConnection.init(DatabaseConnection.java:26)
+	... 77 more
+Caused by: javax.naming.NameNotFoundException: PostgresDS -- service jboss.naming.context.java.PostgresDS
+	at org.jboss.as.naming@33.0.2.Final//org.jboss.as.naming.ServiceBasedNamingStore.lookup(ServiceBasedNamingStore.java:89)
+	at org.jboss.as.naming@33.0.2.Final//org.jboss.as.naming.NamingContext.lookup(NamingContext.java:190)
+	at org.jboss.as.naming@33.0.2.Final//org.jboss.as.naming.InitialContext$DefaultInitialContext.lookup(InitialContext.java:220)
+	at org.jboss.as.naming@33.0.2.Final//org.jboss.as.naming.NamingContext.lookup(NamingContext.java:176)
+	at org.jboss.as.naming@33.0.2.Final//org.jboss.as.naming.NamingContext.lookup(NamingContext.java:172)
+	at java.naming/javax.naming.InitialContext.lookup(InitialContext.java:409)
+	at java.naming/javax.naming.InitialContext.lookup(InitialContext.java:409)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//data_services.DatabaseConnection.init(DatabaseConnection.java:23)
+	... 77 more
+
+2026-02-04 23:53:38,142 SEVERE [jakarta.enterprise.resource.webcontainer.faces.application] (default task-1) Error Rendering View[/main.xhtml]: org.jboss.weld.exceptions.WeldException: WELD-000049: Unable to invoke public void data_services.DatabaseConnection.init() on data_services.DatabaseConnection@77111645
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.injection.producer.DefaultLifecycleCallbackInvoker.invokeMethods(DefaultLifecycleCallbackInvoker.java:87)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.injection.producer.DefaultLifecycleCallbackInvoker.postConstruct(DefaultLifecycleCallbackInvoker.java:68)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.injection.producer.BasicInjectionTarget.postConstruct(BasicInjectionTarget.java:131)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.bean.ManagedBean.create(ManagedBean.java:168)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.contexts.AbstractContext.get(AbstractContext.java:96)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.bean.ContextualInstanceStrategy$DefaultContextualInstanceStrategy.get(ContextualInstanceStrategy.java:104)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.bean.ContextualInstanceStrategy$ApplicationScopedContextualInstanceStrategy.get(ContextualInstanceStrategy.java:144)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.bean.ContextualInstance.get(ContextualInstance.java:50)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.bean.proxy.ContextBeanInstance.getInstance(ContextBeanInstance.java:101)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.bean.proxy.ProxyMethodHandler.getInstance(ProxyMethodHandler.java:136)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//data_services.DatabaseConnection$Proxy$_$$_WeldClientProxy.getConnection(Unknown Source)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//data_services.PointDBServices.countBySession(PointDBServices.java:112)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//data_services.PointDBServices$Proxy$_$$_WeldClientProxy.countBySession(Unknown Source)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//models.ListBean$1.count(ListBean.java:54)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//org.primefaces.component.datatable.DataTable.loadLazyScrollData(DataTable.java:540)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//org.primefaces.component.datatable.DataTable.loadLazyDataIfEnabled(DataTable.java:527)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//org.primefaces.component.datatable.DataTableRenderer.preRender(DataTableRenderer.java:132)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//org.primefaces.component.datatable.DataTableRenderer.render(DataTableRenderer.java:109)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//org.primefaces.component.datatable.DataTableRenderer.encodeEnd(DataTableRenderer.java:102)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.UIComponentBase.encodeEnd(UIComponentBase.java:585)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.UIComponent.encodeAll(UIComponent.java:1442)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.UIComponent.encodeAll(UIComponent.java:1438)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.UIComponent.encodeAll(UIComponent.java:1438)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.application.view.FaceletViewHandlingStrategy.renderView(FaceletViewHandlingStrategy.java:449)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.application.view.MultiViewHandler.renderView(MultiViewHandler.java:160)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.application.ViewHandlerWrapper.renderView(ViewHandlerWrapper.java:125)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:93)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.lifecycle.Phase.doPhase(Phase.java:72)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:150)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.webapp.FacesServlet.executeLifecyle(FacesServlet.java:692)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.webapp.FacesServlet.service(FacesServlet.java:449)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.security.elytron-web.undertow-server@4.1.0.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.lambda$handleRequest$1(ElytronRunAsHandler.java:68)
+	at org.wildfly.security.elytron-base@2.5.2.Final//org.wildfly.security.auth.server.FlexibleIdentityAssociation.runAsFunctionEx(FlexibleIdentityAssociation.java:103)
+	at org.wildfly.security.elytron-base@2.5.2.Final//org.wildfly.security.auth.server.Scoped.runAsFunctionEx(Scoped.java:161)
+	at org.wildfly.security.elytron-base@2.5.2.Final//org.wildfly.security.auth.server.Scoped.runAs(Scoped.java:73)
+	at org.wildfly.security.elytron-web.undertow-server@4.1.0.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.handleRequest(ElytronRunAsHandler.java:67)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.core@2.3.17.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.core@2.3.17.Final//io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.core@2.3.17.Final//io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at org.wildfly.security.elytron-web.undertow-server-servlet@4.1.0.Final//org.wildfly.elytron.web.undertow.server.servlet.CleanUpHandler.handleRequest(CleanUpHandler.java:38)
+	at io.undertow.core@2.3.17.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@33.0.2.Final//org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:44)
+	at io.undertow.core@2.3.17.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@33.0.2.Final//org.wildfly.extension.undertow.deployment.GlobalRequestControllerHandler.handleRequest(GlobalRequestControllerHandler.java:51)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
+	at io.undertow.core@2.3.17.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:276)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:132)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow@33.0.2.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1421)
+	at org.wildfly.extension.undertow@33.0.2.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1421)
+	at org.wildfly.extension.undertow@33.0.2.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1421)
+	at org.wildfly.extension.undertow@33.0.2.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1421)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:256)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:101)
+	at io.undertow.core@2.3.17.Final//io.undertow.server.Connectors.executeRootHandler(Connectors.java:395)
+	at io.undertow.core@2.3.17.Final//io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:859)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1990)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at org.jboss.xnio@3.8.16.Final//org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1282)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.injection.producer.DefaultLifecycleCallbackInvoker.invokeMethods(DefaultLifecycleCallbackInvoker.java:85)
+	... 72 more
+Caused by: java.lang.RuntimeException: Failed to lookup DataSource: PostgresDS -- service jboss.naming.context.java.PostgresDS
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//data_services.DatabaseConnection.init(DatabaseConnection.java:26)
+	... 77 more
+Caused by: javax.naming.NameNotFoundException: PostgresDS -- service jboss.naming.context.java.PostgresDS
+	at org.jboss.as.naming@33.0.2.Final//org.jboss.as.naming.ServiceBasedNamingStore.lookup(ServiceBasedNamingStore.java:89)
+	at org.jboss.as.naming@33.0.2.Final//org.jboss.as.naming.NamingContext.lookup(NamingContext.java:190)
+	at org.jboss.as.naming@33.0.2.Final//org.jboss.as.naming.InitialContext$DefaultInitialContext.lookup(InitialContext.java:220)
+	at org.jboss.as.naming@33.0.2.Final//org.jboss.as.naming.NamingContext.lookup(NamingContext.java:176)
+	at org.jboss.as.naming@33.0.2.Final//org.jboss.as.naming.NamingContext.lookup(NamingContext.java:172)
+	at java.naming/javax.naming.InitialContext.lookup(InitialContext.java:409)
+	at java.naming/javax.naming.InitialContext.lookup(InitialContext.java:409)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//data_services.DatabaseConnection.init(DatabaseConnection.java:23)
+	... 77 more
+
+2026-02-04 23:53:38,152 FATAL [jakarta.enterprise.resource.webcontainer.faces.context] (default task-1) JSF1073: org.jboss.weld.exceptions.WeldException caught during processing of RENDER_RESPONSE 6 : UIComponent-ClientId=, Message=WELD-000049: Unable to invoke public void data_services.DatabaseConnection.init() on data_services.DatabaseConnection@77111645
+2026-02-04 23:53:38,152 FATAL [jakarta.enterprise.resource.webcontainer.faces.context] (default task-1) WELD-000049: Unable to invoke public void data_services.DatabaseConnection.init() on data_services.DatabaseConnection@77111645: org.jboss.weld.exceptions.WeldException: WELD-000049: Unable to invoke public void data_services.DatabaseConnection.init() on data_services.DatabaseConnection@77111645
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.injection.producer.DefaultLifecycleCallbackInvoker.invokeMethods(DefaultLifecycleCallbackInvoker.java:87)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.injection.producer.DefaultLifecycleCallbackInvoker.postConstruct(DefaultLifecycleCallbackInvoker.java:68)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.injection.producer.BasicInjectionTarget.postConstruct(BasicInjectionTarget.java:131)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.bean.ManagedBean.create(ManagedBean.java:168)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.contexts.AbstractContext.get(AbstractContext.java:96)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.bean.ContextualInstanceStrategy$DefaultContextualInstanceStrategy.get(ContextualInstanceStrategy.java:104)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.bean.ContextualInstanceStrategy$ApplicationScopedContextualInstanceStrategy.get(ContextualInstanceStrategy.java:144)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.bean.ContextualInstance.get(ContextualInstance.java:50)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.bean.proxy.ContextBeanInstance.getInstance(ContextBeanInstance.java:101)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.bean.proxy.ProxyMethodHandler.getInstance(ProxyMethodHandler.java:136)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//data_services.DatabaseConnection$Proxy$_$$_WeldClientProxy.getConnection(Unknown Source)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//data_services.PointDBServices.countBySession(PointDBServices.java:112)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//data_services.PointDBServices$Proxy$_$$_WeldClientProxy.countBySession(Unknown Source)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//models.ListBean$1.count(ListBean.java:54)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//org.primefaces.component.datatable.DataTable.loadLazyScrollData(DataTable.java:540)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//org.primefaces.component.datatable.DataTable.loadLazyDataIfEnabled(DataTable.java:527)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//org.primefaces.component.datatable.DataTableRenderer.preRender(DataTableRenderer.java:132)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//org.primefaces.component.datatable.DataTableRenderer.render(DataTableRenderer.java:109)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//org.primefaces.component.datatable.DataTableRenderer.encodeEnd(DataTableRenderer.java:102)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.UIComponentBase.encodeEnd(UIComponentBase.java:585)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.UIComponent.encodeAll(UIComponent.java:1442)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.UIComponent.encodeAll(UIComponent.java:1438)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.UIComponent.encodeAll(UIComponent.java:1438)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.application.view.FaceletViewHandlingStrategy.renderView(FaceletViewHandlingStrategy.java:449)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.application.view.MultiViewHandler.renderView(MultiViewHandler.java:160)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.application.ViewHandlerWrapper.renderView(ViewHandlerWrapper.java:125)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:93)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.lifecycle.Phase.doPhase(Phase.java:72)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:150)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.webapp.FacesServlet.executeLifecyle(FacesServlet.java:692)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.webapp.FacesServlet.service(FacesServlet.java:449)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.security.elytron-web.undertow-server@4.1.0.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.lambda$handleRequest$1(ElytronRunAsHandler.java:68)
+	at org.wildfly.security.elytron-base@2.5.2.Final//org.wildfly.security.auth.server.FlexibleIdentityAssociation.runAsFunctionEx(FlexibleIdentityAssociation.java:103)
+	at org.wildfly.security.elytron-base@2.5.2.Final//org.wildfly.security.auth.server.Scoped.runAsFunctionEx(Scoped.java:161)
+	at org.wildfly.security.elytron-base@2.5.2.Final//org.wildfly.security.auth.server.Scoped.runAs(Scoped.java:73)
+	at org.wildfly.security.elytron-web.undertow-server@4.1.0.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.handleRequest(ElytronRunAsHandler.java:67)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.core@2.3.17.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.core@2.3.17.Final//io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.core@2.3.17.Final//io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at org.wildfly.security.elytron-web.undertow-server-servlet@4.1.0.Final//org.wildfly.elytron.web.undertow.server.servlet.CleanUpHandler.handleRequest(CleanUpHandler.java:38)
+	at io.undertow.core@2.3.17.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@33.0.2.Final//org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:44)
+	at io.undertow.core@2.3.17.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@33.0.2.Final//org.wildfly.extension.undertow.deployment.GlobalRequestControllerHandler.handleRequest(GlobalRequestControllerHandler.java:51)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
+	at io.undertow.core@2.3.17.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:276)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:132)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow@33.0.2.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1421)
+	at org.wildfly.extension.undertow@33.0.2.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1421)
+	at org.wildfly.extension.undertow@33.0.2.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1421)
+	at org.wildfly.extension.undertow@33.0.2.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1421)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:256)
+	at io.undertow.servlet@2.3.17.Final//io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:101)
+	at io.undertow.core@2.3.17.Final//io.undertow.server.Connectors.executeRootHandler(Connectors.java:395)
+	at io.undertow.core@2.3.17.Final//io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:859)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1990)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at org.jboss.xnio@3.8.16.Final//org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1282)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.jboss.weld.core@5.1.2.Final//org.jboss.weld.injection.producer.DefaultLifecycleCallbackInvoker.invokeMethods(DefaultLifecycleCallbackInvoker.java:85)
+	... 72 more
+Caused by: java.lang.RuntimeException: Failed to lookup DataSource: PostgresDS -- service jboss.naming.context.java.PostgresDS
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//data_services.DatabaseConnection.init(DatabaseConnection.java:26)
+	... 77 more
+Caused by: javax.naming.NameNotFoundException: PostgresDS -- service jboss.naming.context.java.PostgresDS
+	at org.jboss.as.naming@33.0.2.Final//org.jboss.as.naming.ServiceBasedNamingStore.lookup(ServiceBasedNamingStore.java:89)
+	at org.jboss.as.naming@33.0.2.Final//org.jboss.as.naming.NamingContext.lookup(NamingContext.java:190)
+	at org.jboss.as.naming@33.0.2.Final//org.jboss.as.naming.InitialContext$DefaultInitialContext.lookup(InitialContext.java:220)
+	at org.jboss.as.naming@33.0.2.Final//org.jboss.as.naming.NamingContext.lookup(NamingContext.java:176)
+	at org.jboss.as.naming@33.0.2.Final//org.jboss.as.naming.NamingContext.lookup(NamingContext.java:172)
+	at java.naming/javax.naming.InitialContext.lookup(InitialContext.java:409)
+	at java.naming/javax.naming.InitialContext.lookup(InitialContext.java:409)
+	at deployment.Lab3-dev-1.0-SNAPSHOT.war//data_services.DatabaseConnection.init(DatabaseConnection.java:23)
+	... 77 more
+

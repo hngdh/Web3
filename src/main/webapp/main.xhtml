@@ -82,8 +82,11 @@
                                        action="#{listBean.submit}"
                                        update="form final-results"
                                        process="@form"
-                                       oncomplete="loadPointsFromJson(args.pointsJson); 
-                                                  showResultOverlay(args.hit);"/>
+                                       oncomplete="if(args.validationFailed) {
+                                                    showResultOverlay('error');}
+                                                    else {
+                                                    loadPointsFromJson(args.pointsJson);
+                                                  showResultOverlay(args.hit);}"/>
                     </div>
                 </h:form>
             </div>
@@ -132,10 +135,13 @@
                     <p:commandButton id="graphSubmit"
                                    ajax="true"
                                    action="#{listBean.submit}"
-                                   update=":form :final-results"
+                                   update=":final-results"
                                    process="@form"
-                                   oncomplete="loadPointsFromJson(args.pointsJson); 
-                                             showResultOverlay(args.hit);"/>
+                                   oncomplete="if(args.validationFailed) {
+                                                    showResultOverlay('error');}
+                                                    else {
+                                                    loadPointsFromJson(args.pointsJson);
+                                                  showResultOverlay(args.hit);}"/>
                 </h:form>
             </canvas>
             

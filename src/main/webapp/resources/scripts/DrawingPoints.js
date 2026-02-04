@@ -18,8 +18,8 @@ function distinguishPoints() {
 function drawPointsOperation() {
     if (typeof window.pointsXY === 'undefined') return;
     distinguishPoints();
-    drawPointsWithColor(hitPoints, 'green');
-    drawPointsWithColor(missedPoints, 'red');
+    drawPointsWithColor(hitPoints, 'rgba(0,180,0,0.9)');
+    drawPointsWithColor(missedPoints, 'rgba(200,0,0,0.95)');
 }
 
 function drawPointsWithColor(points, type) {

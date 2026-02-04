@@ -13,6 +13,7 @@ import org.primefaces.model.FilterMeta;
 import org.primefaces.model.LazyDataModel;
 import org.primefaces.model.SortMeta;
 
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Map;
@@ -68,7 +69,7 @@ public class ListBean {
         p.setY(params.getY());
         p.setR(params.getR());
         p.setSessionId(sid());
-        
+
         long start = System.nanoTime();
         p.setHit(parametersChecker.checkParams(p.getX(), p.getY(), p.getR()));
         long end = System.nanoTime();

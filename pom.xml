@@ -76,6 +76,7 @@
                 <artifactId>wildfly-maven-plugin</artifactId>
                 <version>5.1.5.Final</version>
                 <configuration>
+                    <jboss-home>C:\wildfly-36.0.0.Final</jboss-home>
                     <feature-packs>
                         <feature-pack>
                             <groupId>org.wildfly</groupId>

@@ -36,32 +36,14 @@ function showResultOverlay(hit) {
         overlayTimer = null;
     }
 
-    text.textContent = hit ? 'HIT ✓' : 'MISS ✗';
-    box.classList.remove('hit', 'miss', 'show');
-    box.classList.add(hit ? 'hit' : 'miss');
+    box.classList.remove('hit', 'miss', 'error');
 
-    void box.offsetWidth;
-    box.classList.add('show');
-
-    overlayTimer = setTimeout(() => {
-        box.classList.remove('show');
-    }, 2000);
-}
-
-function showOverlay(type, msg) {
-    if (!box || !text) {
-        return;
-    }
-
-    if (overlayTimer) {
-        clearTimeout(overlayTimer);
-        overlayTimer = null;
-    }
-
-    if (type === 2) {
-        text.textContent = msg;
-        box.classList.remove('error', 'show');
+    if  (hit === 'error') {
+        text.textContent = 'UNDEFINED FIELD(S)';
         box.classList.add('error');
+    } else {
+        text.textContent = hit ? 'HIT' : 'MISS';
+        box.classList.add(hit ? 'hit' : 'miss');
     }
 
     void box.offsetWidth;
