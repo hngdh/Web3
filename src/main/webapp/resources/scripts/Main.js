@@ -36,7 +36,7 @@ function showResultOverlay(hit) {
         overlayTimer = null;
     }
 
-    box.classList.remove('hit', 'miss', 'error');
+    box.classList.remove('hit', 'miss', 'error', 'show');
 
     if  (hit === 'error') {
         text.textContent = 'UNDEFINED FIELD(S)';

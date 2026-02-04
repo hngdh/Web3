@@ -1,171 +1,60 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="jakarta.faces.html"
-      xmlns:f="jakarta.faces.core"
-      xmlns:p="http://primefaces.org/ui"
-      xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+      xmlns:p="http://primefaces.org/ui">
 
 <h:head>
     <title>Lab 3</title>
-    <h:outputStylesheet name="styles/main.css"/>
+    <h:outputStylesheet name="styles/index.css"/>
 </h:head>
 
 <h:body>
-    <header>
-        <div id="author-block">
-            <span id="author-information">Dinh Huy Hoang, P3231</span>
-            <span id="variant">Variant: 1922</span>
-        </div>
-    </header>
-
-    <div class="working-container">
-        <div class="left-panel">
-            <div class="upper-panel">
-                <div class="label-area">Parameters</div>
-                
-                <h:form id="form">
-                    <div class="input-zone">
-                        <label class="labels" id="labelX">Coordinate X:</label>
-                        <p:selectOneRadio id="x" 
-                                        value="#{paramsBean.x}"
-                                        styleClass="radio-x-group"
-                                        required="true">
-                            <f:selectItem itemLabel="-5" itemValue="-5"/>
-                            <f:selectItem itemLabel="-4" itemValue="-4"/>
-                            <f:selectItem itemLabel="-3" itemValue="-3"/>
-                            <f:selectItem itemLabel="-2" itemValue="-2"/>
-                            <f:selectItem itemLabel="-1" itemValue="-1"/>
-                            <f:selectItem itemLabel="0" itemValue="0"/>
-                            <f:selectItem itemLabel="1" itemValue="1"/>
-                            <f:selectItem itemLabel="2" itemValue="2"/>
-                            <f:selectItem itemLabel="3" itemValue="3"/>
-                        </p:selectOneRadio>
-                        <p:message for="x"/>
-                    </div>
-
-                    <div class="input-zone">
-                        <label class="labels">Coordinate Y:</label>
-                        <div class="input-and-condition">
-                            <p:inputText id="y"
-                                       value="#{paramsBean.y}"
-                                       styleClass="inputTextY"
-                                       required="true"
-                                       pt:placeholder="Enter Y value">
-                                <f:validateDoubleRange minimum="-3" maximum="5"/>
-                            </p:inputText>
-                            <span class="condition"> [-3, 5] </span>
-                            <p:message for="y"/>
-                        </div>
-                    </div>
-
-                    <div class="input-zone">
-                        <label class="labels">Parameter R:</label>
-                        <p:selectOneRadio id="R"
-                                        value="#{paramsBean.r}"
-                                        styleClass="radio-r-group"
-                                        required="true">
-                            <f:selectItem itemLabel="1" itemValue="1"/>
-                            <f:selectItem itemLabel="1.5" itemValue="1.5"/>
-                            <f:selectItem itemLabel="2" itemValue="2"/>
-                            <f:selectItem itemLabel="2.5" itemValue="2.5"/>
-                            <f:selectItem itemLabel="3" itemValue="3"/>
-                            <p:ajax event="change" 
-                                   process="@this" 
-                                   update=":graphForm:gr"
-                                   oncomplete="updateGraphR();"/>
-                        </p:selectOneRadio>
-                        <p:message for="R"/>
-                    </div>
-
-                    <div class="button-container">
-                        <p:button value="Vào trang chính"
-                          outcome="main"
-                          icon="pi pi-home"
-                          styleClass="button-container"/>
-                    </div>
-                </h:form>
+    <div class="start-page-container">
+        <header class="start-header">
+            <div class="student-info">
+                <h1>Dinh Huy Hoang</h1>
+                <p class="group-info">Group: P3231</p>
+                <p class="variant-info">Variant: 1922</p>
             </div>
-
-            <div class="lower-panel">
-                <div class="label-area">Results</div>
-                
-                <p:dataTable id="final-results"
-                           value="#{listBean.model}"
-                           var="p"
-                           lazy="true"
-                             rows="5"
-                             paginator="true"
-                             paginatorPosition="bottom"
-                           styleClass="results-table">
-                    <p:column headerText="Hit">
-                        <h:outputText value="#{p.hit ? '✓' : '✗'}" 
-                                    styleClass="#{p.hit ? 'hit-true' : 'hit-false'}"/>
-                    </p:column>
-                    <p:column headerText="X">#{p.x}</p:column>
-                    <p:column headerText="Y">#{p.y}</p:column>
-                    <p:column headerText="R">#{p.r}</p:column>
-                    <p:column headerText="Time (ms)">
-                        <h:outputText value="#{p.calTime}">
-                            <f:convertNumber pattern="#0.000"/>
-                        </h:outputText>
-                    </p:column>
-                    <p:column headerText="Timestamp">
-                        <h:outputText value="#{p.releaseTime}">
-                            <f:convertDateTime type="localDateTime" 
-                                             pattern="dd/MM HH:mm:ss"/>
-                        </h:outputText>
-                    </p:column>
-                </p:dataTable>
+        </header>
+        <div class="clock-container">
+            <div class="clock-display">
+                <div class="date-display" id="dateDisplay"></div>
+                <div class="time-display" id="timeDisplay"></div>
             </div>
         </div>
-
-        <div class="right-panel">
-            <div class="label-area">Illustration Graph</div>
-            
-            <canvas id="graph">
-                <h:form id="graphForm" style="display:none">
-                    <h:inputHidden id="gx" value="#{paramsBean.x}"/>
-                    <h:inputHidden id="gy" value="#{paramsBean.y}"/>
-                    <h:inputHidden id="gr" value="#{paramsBean.r}"/>
-                    <p:commandButton id="graphSubmit"
-                                   ajax="true"
-                                   action="#{listBean.submit}"
-                                   update=":form :final-results"
-                                   process="@form"
-                                   oncomplete="loadPointsFromJson(args.pointsJson);
-                                             showResultOverlay(args.hit);"/>
-                </h:form>
-            </canvas>
-            
-            <div class="coordinate-log">
-                <label>Current X: <span id="screen-log-x">--</span></label>
-                <label>Current Y: <span id="screen-log-y">--</span></label>
-            </div>
+        <div class="navigation-container">
+            <p:button value="Welcome"
+                      outcome="main"
+                      icon="pi pi-arrow-right"
+                      styleClass="expand-effect-btn"/>
         </div>
     </div>
-
-    <div id="result-overlay" aria-live="polite">
-        <span id="result-overlay-text"></span>
-    </div>
-
-    <div id="coor-tooltip"></div>
 
     <script>
-        window.submitGraphPoint = function(x, y) {
-            var gx = document.getElementById('graphForm:gx');
-            var gy = document.getElementById('graphForm:gy');
-            var btn = document.getElementById('graphForm:graphSubmit');
+        function updateClock() {
+            const now = new Date();
 
-            gx.value = x;
-            gy.value = y;
+            const dateOptions = { 
+                weekday: 'long', 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric' 
+            };
+            const dateString = now.toLocaleDateString('en-US', dateOptions);
 
-            btn.click();
-        };
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            const timeString = hours + ':' + minutes + ':' + seconds;
+
+            document.getElementById('dateDisplay').textContent = dateString;
+            document.getElementById('timeDisplay').textContent = timeString;
+        }
+
+        updateClock();
+
+        setInterval(updateClock, 1000);
     </script>
-
-    <h:outputScript name="scripts/DrawingGraph.js"/>
-    <h:outputScript name="scripts/DrawingPoints.js"/>
-    <h:outputScript name="scripts/Validation.js"/>
-    <h:outputScript name="scripts/Main.js"/>
 </h:body>
 </html>

@@ -29,20 +29,71 @@ header {
 }
 
 #author-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     font-weight: bold;
     font-size: 4rem;
     color: #013220;
 }
 
 #author-information {
-    position: relative;
     left: 3rem;
     cursor: wait;
 }
 
+.expand-effect-btn {
+    justify-self: center;
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 25px !important;
+    background-color: transparent !important;
+    color: #013220 !important;
+    border-color: transparent !important;
+    position: relative !important;
+    overflow: hidden !important;
+    transition: all 0.4s ease-in-out !important;
+}
+
+.expand-effect-btn .ui-button-icon-left {
+    font-size: 5rem !important;
+    position: absolute !important;
+    top: 55% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    z-index: 2;
+    transition: all 0.4s ease-in-out !important;
+}
+
+.expand-effect-btn .ui-button-text {
+    font-size: 2.5rem !important;
+    opacity: 0;
+    white-space: nowrap !important;
+    position: absolute !important;
+    top: 50%;
+    transform: translate(10px, -50%);
+    transition: all 0.4s ease-in-out !important;
+}
+
+.expand-effect-btn:hover {
+    background-color: #013220 !important;
+    color: white !important;
+    transform: scale(1.1);
+    width: 130px !important;
+    box-shadow: 0 5px 15px rgba(1, 50, 32, 0.3);
+}
+.expand-effect-btn:hover .ui-button-icon-left {
+    font-size: 3rem !important;
+    left: calc(100% - 40px) !important;
+    transform: translate(0, -50%) !important;
+    color: white !important;
+}
+
+.expand-effect-btn:hover .ui-button-text {
+    opacity: 1;
+}
+
 #variant {
-    position: relative;
-    float: right;
+    text-align: right;
     right: 3rem;
     cursor: wait;
 }
