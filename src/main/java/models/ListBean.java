@@ -85,4 +85,8 @@ public class ListBean {
         PrimeFaces.current().ajax().addCallbackParam("hit", p.isHit());
         PrimeFaces.current().ajax().addCallbackParam("pointsJson", pointSessionList.getJson());
     }
+
+    public void updateHistory() {
+        PrimeFaces.current().ajax().addCallbackParam("pointsJson", pointSessionList.getJson());
+    }
 }

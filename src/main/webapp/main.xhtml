@@ -28,6 +28,12 @@
                 <div class="label-area">Parameters</div>
                 
                 <h:form id="form">
+                    <p:remoteCommand name="loadInitialData"
+                        action="#{listBean.updateHistory}"
+                        autoRun="true"
+                        process="@this"
+                        oncomplete="if(args.pointsJson) {
+                                loadPointsFromJson(args.pointsJson);}" />
                     <div class="input-zone">
                         <label class="labels" id="labelX">Coordinate X:</label>
                         <p:selectOneRadio id="x" 
