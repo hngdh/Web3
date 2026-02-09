@@ -46,7 +46,7 @@ public class ListBean {
 
     @PostConstruct
     public void init() {
-        model = new LazyDataModel<Point>() {
+        model = new LazyDataModel<>() {
             private static final long serialVersionUID = 1L;
 
             @Override
@@ -55,9 +55,9 @@ public class ListBean {
             }
 
             @Override
-            public List<Point> load(int first, int pageSize, 
-                                   Map<String, SortMeta> sortBy, 
-                                   Map<String, FilterMeta> filterBy) {
+            public List<Point> load(int first, int pageSize,
+                                    Map<String, SortMeta> sortBy,
+                                    Map<String, FilterMeta> filterBy) {
                 return svc.findRangeBySession(sid(), first, pageSize);
             }
         };
