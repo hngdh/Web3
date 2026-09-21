@@ -16,7 +16,7 @@ public class ParametersChecker {
                 && y.compareTo(BigDecimal.ZERO) >= 0
                 && x.compareTo(r.negate().divide(BigDecimal.valueOf(2))) >= 0
                 && y.compareTo(r) <= 0;
-    }
+
 
     private boolean checkCircle(BigDecimal x, BigDecimal y, BigDecimal r) {
         return x.compareTo(BigDecimal.ZERO) >= 0

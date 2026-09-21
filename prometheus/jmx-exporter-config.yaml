@@ -1,0 +1,7 @@
+rules:
+  - pattern: 'web.mbean<type=(.*)><>(TotalPoints|PointsInsideArea)'
+    name: web_mbean_$1_$2
+    type: GAUGE
+  - pattern: 'web.mbean<type=(.*)><>(AverageIntervalSeconds)'
+    name: web_mbean_$1_$2
+    type: GAUGE

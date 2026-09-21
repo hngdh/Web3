@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Web_Lab3_Ant" default="build" basedir=".">
+
+    <property file="build.properties"/>
+
+    <path id="compile.classpath">
+        <fileset dir="${lib.dir}" erroronmissingdir="false">
+            <include name="*.jar"/>
+        </fileset>
+
+        <fileset dir="${m2.repo}">
+            <include name="jakarta/enterprise/jakarta.enterprise.cdi-api/**/*.jar"/>
+            <include name="jakarta/faces/jakarta.faces-api/**/*.jar"/>
+            <include name="jakarta/inject/jakarta.inject-api/**/*.jar"/>
+            <include name="jakarta/annotation/jakarta.annotation-api/**/*.jar"/>
+            <include name="jakarta/servlet/jakarta.servlet-api/**/*.jar"/>
+            <include name="jakarta/persistence/jakarta.persistence-api/**/*.jar"/>
+            <include name="jakarta/transaction/jakarta.transaction-api/**/*.jar"/>
+            <include name="org/primefaces/primefaces/**/*.jar"/>
+            <include name="org/projectlombok/lombok/**/*.jar"/>
+            <include name="com/fasterxml/jackson/core/**/*.jar"/>
+            <include name="org/jboss/logging/jboss-logging/**/*.jar"/>
+
+            <exclude name="**/*-sources.jar"/>
+            <exclude name="**/*-javadoc.jar"/>
+        </fileset>
+
+        <fileset dir="${m2.repo}">
+            <include name="junit/junit/**/*.jar"/>
+            <include name="org/hamcrest/hamcrest-core/**/*.jar"/>
+        </fileset>
+    </path>
+
+    <target name="clean" description="Deletes compiled classes and temporary build folders">
+        <echo message="Cleaning up build directories..."/>
+        <delete dir="${build.dir}"/>
+    </target>
+
+    <target name="compile" description="Compiles the Java source files">
+        <echo message="Creating build directories..."/>
+        <mkdir dir="${build.classes.dir}"/>
+
+        <echo message="Compiling source code..."/>
+        <javac srcdir="${src.dir}" destdir="${build.classes.dir}" classpathref="compile.classpath" includeantruntime="false">
+            <compilerarg value="-Xlint:deprecation"/>
+        </javac>
+
+        <echo message="Copying resource bundles (messages.properties)..."/>
+        <copy todir="${build.classes.dir}">
+            <fileset dir="${resources.dir}" erroronmissingdir="false">
+                <include name="**/*"/>
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="build" depends="compile" description="Packages compiled code into an executable JAR file">
+        <mkdir dir="${build.jar.dir}"/>
+
+        <echo message="Creating MANIFEST.MF and packaging into JAR..."/>
+        <jar destfile="${build.jar.dir}/${project.name}.jar">
+            <fileset dir="${build.classes.dir}"/>
+            <fileset dir="${webapp.dir}"/>
+
+            <manifest>
+                <attribute name="Manifest-Version" value="${project.version}"/>
+                <attribute name="Main-Class" value="${main.class}"/>
+            </manifest>
+        </jar>
+        <echo message="Build complete: ${build.jar.dir}/${project.name}.jar"/>
+    </target>
+
+    <target name="compile-tests" depends="build">
+        <mkdir dir="${build.test.classes.dir}"/>
+        <javac srcdir="${src.test.dir}" destdir="${build.test.classes.dir}" classpathref="compile.classpath" includeantruntime="false">
+            <classpath>
+                <pathelement location="${build.classes.dir}"/>
+            </classpath>
+        </javac>
+    </target>
+
+    <target name="test" depends="compile-tests" description="Runs JUnit tests">
+        <mkdir dir="${build.test.reports.dir}"/>
+        <echo message="Running JUnit tests..."/>
+
+        <junit printsummary="yes" haltonfailure="no" failureproperty="tests.failed">
+            <classpath>
+                <path refid="compile.classpath"/>
+                <pathelement location="${build.classes.dir}"/>
+                <pathelement location="${build.test.classes.dir}"/>
+            </classpath>
+
+            <formatter type="xml"/>
+
+            <batchtest fork="yes" todir="${build.test.reports.dir}">
+                <fileset dir="${src.test.dir}">
+                    <include name="**/*Test.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+
+        <fail if="tests.failed" message="Build failed because unit tests failed!"/>
+    </target>
+
+    <target name="music" depends="build" description="Plays music upon successful build completion">
+        <echo message="Playing victory music..."/>
+        <sound>
+            <success source="${resources.dir}/js/script.js" loops="0"/>
+        </sound>
+    </target>
+
+    <target name="scp" depends="build" description="Transfers the built JAR via SCP to helios faculty server">
+        <echo message="Deploying project archive to remote server ${scp.server}..."/>
+        <scp file="${build.jar.dir}/${project.name}.jar"
+             todir="${scp.username}:${scp.password}@${scp.server}:${scp.dest.dir}"
+             port="${scp.port}"
+             trust="true" failonerror="false"/>
+    </target>
+
+    <target name="doc" depends="build" description="Generates Javadoc, calculates MD5/SHA-1 signatures, and updates MANIFEST.MF">
+        <echo message="Generating Javadoc documentation..."/>
+        <mkdir dir="${build.javadoc.dir}"/>
+        <javadoc destdir="${build.javadoc.dir}" author="true" version="true" use="true">
+            <fileset dir="${src.dir}" includes="**/*.java"/>
+            <classpath refid="compile.classpath"/>
+        </javadoc>
+
+        <echo message="Calculating MD5 and SHA-1 checksums for the compiled archive..."/>
+        <checksum file="${build.jar.dir}/${project.name}.jar" algorithm="MD5" property="jar.md5"/>
+        <checksum file="${build.jar.dir}/${project.name}.jar" algorithm="SHA-1" property="jar.sha1"/>
+
+        <echo message="Updating Manifest metadata properties inside JAR..."/>
+        <jar destfile="${build.jar.dir}/${project.name}.jar" update="true">
+            <zipfileset dir="${build.javadoc.dir}" prefix="docs"/>
+            <manifest>
+                <attribute name="Project-JAR-MD5" value="${jar.md5}"/>
+                <attribute name="Project-JAR-SHA1" value="${jar.sha1}"/>
+            </manifest>
+        </jar>
+        <echo message="Checksum operations executed successfully."/>
+    </target>
+
+    <target name="xml" description="Validates all XML configuration files in the project">
+        <echo message="Validating descriptor configurations..."/>
+        <xmlvalidate failonerror="true">
+            <fileset dir="${webapp.dir}/WEB-INF" includes="**/*.xml"/>
+        </xmlvalidate>
+        <echo message="XML file parsing validation passed successfully."/>
+    </target>
+
+    <target name="native2ascii" description="Converts localization properties files to ASCII format">
+        <echo message="Processing resource localization bundles via native2ascii translation..."/>
+        <mkdir dir="${build.classes.dir}"/>
+        <native2ascii src="${resources.dir}" dest="${build.classes.dir}" includes="**/*.properties" erroronmissingdir="false"/>
+        <echo message="Localization string processing completed successfully."/>
+    </target>
+
+    <target name="alt" description="Generates alternative source compilation variant via regexp matches">
+        <echo message="Generating custom distribution source code copies..."/>
+        <mkdir dir="${build.dir}/alt-src"/>
+        <copy todir="${build.dir}/alt-src">
+            <fileset dir="${src.dir}"/>
+        </copy>
+
+        <replaceregexp match="inputBean" replace="altInputBean" flags="g">
+            <fileset dir="${build.dir}/alt-src" includes="**/*.java"/>
+        </replaceregexp>
+
+        <mkdir dir="${build.dir}/alt-classes"/>
+        <javac srcdir="${build.dir}/alt-src" destdir="${build.dir}/alt-classes" includeantruntime="false">
+            <classpath refid="compile.classpath"/>
+        </javac>
+
+        <jar destfile="${build.jar.dir}/${project.name}-alternative.jar">
+            <fileset dir="${build.dir}/alt-classes"/>
+            <manifest>
+                <attribute name="Manifest-Version" value="${project.version}-alt"/>
+                <attribute name="Main-Class" value="${main.class}"/>
+            </manifest>
+        </jar>
+        <echo message="Alternative custom package built successfully."/>
+    </target>
+
+    <target name="report" depends="test" description="Generates test reports and commits them to Git">
+        <echo message="Generating JUnit HTML dashboards..."/>
+        <mkdir dir="${build.test.reports.dir}/html"/>
+        <junitreport todir="${build.test.reports.dir}">
+            <fileset dir="${build.test.reports.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${build.test.reports.dir}/html"/>
+        </junitreport>
+
+        <echo message="Tests passed! Committing generated reports to Git..."/>
+        <exec executable="git" failonerror="false">
+            <arg value="add"/>
+            <arg value="${build.test.reports.dir}"/>
+        </exec>
+        <exec executable="git" failonerror="false">
+            <arg value="commit"/>
+            <arg value="-m"/>
+            <arg value="chore: automated JUnit test report generation"/>
+        </exec>
+    </target>
+
+    <target name="history" description="Triggers the SVN history rollback compilation loop">
+        <exec executable="svn" failonerror="false">
+            <arg value="info"/>
+        </exec>
+
+        <local name="svn.raw.info"/>
+        <exec executable="svn" outputproperty="svn.raw.info" failonerror="true">
+            <arg value="info"/>
+        </exec>
+
+        <local name="extracted.rev"/>
+        <loadproperties>
+            <propertyresource name="svn.raw.info"/>
+            <filterchain>
+                <linecontainsregexp>
+                    <regexp pattern="^(Revision|Ревизия):"/>
+                </linecontainsregexp>
+                <tokenfilter>
+                    <replaceregex pattern="^(Revision|Ревизия):\s*" replace="extracted.rev=" flags="g"/>
+                </tokenfilter>
+            </filterchain>
+        </loadproperties>
+
+        <local name="start.rev"/>
+        <property name="start.rev" value="${extracted.rev}"/>
+        <echo message="Starting history check from HEAD revision: ${start.rev}"/>
+
+        <antcall target="history-loop">
+            <param name="current.rev" value="${start.rev}"/>
+            <param name="initial.head.rev" value="${start.rev}"/>
+        </antcall>
+
+        <echo message="Restoring workspace to initial HEAD revision: ${start.rev}"/>
+        <exec executable="svn" failonerror="true">
+            <arg line="update -r ${start.rev}"/>
+        </exec>
+    </target>
+
+    <target name="history-loop">
+        <local name="compile.result"/>
+        <local name="compile.ok"/>
+
+        <echo message="Checking revision ${current.rev}..."/>
+        <exec executable="svn" failonerror="true">
+            <arg line="update -r ${current.rev} --quiet"/>
+        </exec>
+
+        <antcall target="clean"/>
+
+        <exec executable="cmd" resultproperty="compile.result">
+            <arg line="/c ant compile"/>
+        </exec>
+
+        <condition property="compile.ok">
+            <equals arg1="${compile.result}" arg2="0"/>
+        </condition>
+
+        <antcall target="history-success">
+            <param name="current.rev" value="${current.rev}"/>
+        </antcall>
+        <antcall target="history-failure">
+            <param name="current.rev" value="${current.rev}"/>
+            <param name="initial.head.rev" value="${initial.head.rev}"/>
+        </antcall>
+    </target>
+
+    <target name="history-success" if="compile.ok">
+        <local name="next.rev"/>
+        <exec executable="powershell" outputproperty="next.rev" failonerror="true">
+            <arg value="-Command"/>
+            <arg value="[int]('${current.rev}'.Trim()) + 1"/>
+        </exec>
+        <echo message="Revision ${current.rev} successfully compiled. Generating diff for broken revision ${next.rev}..."/>
+        <exec executable="svn" output="broken_revision_${next.rev}_diff.patch" failonerror="true">
+            <arg line="diff -c ${next.rev}"/>
+        </exec>
+    </target>
+
+    <target name="history-failure" unless="compile.ok">
+        <local name="is.first"/>
+        <condition property="is.first">
+            <equals arg1="${current.rev}" arg2="1"/>
+        </condition>
+
+        <antcall target="history-stop-at-first"/>
+        <antcall target="history-continue">
+            <param name="current.rev" value="${current.rev}"/>
+            <param name="initial.head.rev" value="${initial.head.rev}"/>
+        </antcall>
+    </target>
+
+    <target name="history-stop-at-first" if="is.first">
+        <echo message="Reached the very first revision (1) and it still fails to compile. Stopping."/>
+    </target>
+
+    <target name="history-continue" unless="is.first">
+        <local name="prev.rev"/>
+        <exec executable="powershell" outputproperty="prev.rev" failonerror="true">
+            <arg value="-Command"/>
+            <arg value="[int]('${current.rev}'.Trim()) - 1"/>
+        </exec>
+        <antcall target="history-loop">
+            <param name="current.rev" value="${prev.rev}"/>
+            <param name="initial.head.rev" value="${initial.head.rev}"/>
+        </antcall>
+    </target>
+</project>
